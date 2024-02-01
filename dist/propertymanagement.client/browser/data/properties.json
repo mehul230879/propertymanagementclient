@@ -1,0 +1,49 @@
+[
+  {
+    "Id": 1,
+    "SellRent": 1,
+    "Name": "Patel's House",
+    "Type": "House",
+    "Price": 20000,
+    "Image": "house1"
+  },
+  {
+    "Id": 2,
+    "SellRent": 2,
+    "Name": "Mishra's House",
+    "Type": "House",
+    "Price": 21000,
+    "Image": "house2"
+  },
+  {
+    "Id": 3,
+    "SellRent": 1,
+    "Name": "Russel's House",
+    "Type": "House",
+    "Price": 21000,
+    "Image": "house3"
+  },
+  {
+    "Id": 4,
+    "SellRent": 1,
+    "Name": "Trefft's House",
+    "Type": "House",
+    "Price": 22000,
+    "Image": "house4"
+  },
+  {
+    "Id": 5,
+    "SellRent": 2,
+    "Name": "Joshi's House",
+    "Type": "House",
+    "Price": 120000,
+    "Image": "house5"
+  },
+  {
+    "Id": 6,
+    "SellRent": 1,
+    "Name": "Anna's House",
+    "Type": "House",
+    "Price": 22000
+  }
+]

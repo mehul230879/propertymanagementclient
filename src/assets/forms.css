@@ -1,0 +1,22 @@
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.error-bock {
+  color: red;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.propImage {
+  height: 250px;
+}
+
+.form-horizontal{
+  text-align: left;
+}
+
+.label {
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 5px;
+}

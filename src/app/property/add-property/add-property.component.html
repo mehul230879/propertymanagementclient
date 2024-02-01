@@ -1,0 +1,49 @@
+<!--<p>add-property works!</p>
+<button class="btn btn-primary" (click)="goBack()">Back</button>-->
+<div class="row mb-5" style="text-align: left;">
+  <div class="col-8">
+    <div class="card">
+        <div class="card-header">
+        Add New Property
+        </div>
+        <div class="card-body">
+          <!--<form (ngSubmit)="onSubmit(Myform)" #Myform="ngForm">-->
+          <form name="AnyForm" (ngSubmit)="onSubmit()"  [formGroup]="addPropertyForm">
+                <div class="form-group col-12 ">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control"  [(ngModel)]="propertyView.Name" name="Name"   formControlName="Name"
+                        required minlength="5" />
+                <!--  <div *ngIf="propName.invalid && (propName.dirty || propName.touched)" class="error-bock">
+                    <div *ngIf="propName.errors?.['minlength']">Please string more then 5 chars</div>
+                    <div *ngIf="propName.errors?.['required']">Please provide name</div>
+                  </div> -->
+                  <div *ngIf="Name.invalid && nextClicked" class="error-block">Please provide Type</div>
+                </div>
+                <div class="form-group col-12">
+                  <label for="type">Type</label>
+                  <input type="text" class="form-control"  [(ngModel)]="propertyView.Type" name="Type"  required   formControlName="Type"/>
+                    <div *ngIf="Type.invalid && nextClicked"  class="error-block">Please provide Type</div>
+                </div>
+                <div class="form-group col-12">
+                  <label for="price">Price</label>
+                  <input type="text" class="form-control"  [(ngModel)]="propertyView.Price" name="Price" formControlName="Price"/>
+                  <div *ngIf="Price.invalid && nextClicked"  class="error-block">Please provide Type</div>
+                </div>
+                <div class="form-group col-12">
+                  <button type="submit" class="btn btn-primary mr-20">Save</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+            
+          </form>
+        </div>  
+    </div>
+  </div>
+  <div class="col-4">
+    <!-- <div class="card-header">
+      Your Property Preview
+    </div> -->
+    <div class="shadow-lg p-3 bg-white">
+      <app-property-card [Property]="propertyView" hideIcons="true"></app-property-card>
+    </div>
+  </div>
+</div>
